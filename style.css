@@ -39,7 +39,7 @@ body {
     transparent 10%
   ); /* Comment: Defines a radial gradient for red dots */
 }
-mark {
+/*mark {
   background-color: yellow;
   color: black;
   animation: highlight-animation 2s ease-in-out;
@@ -49,11 +49,29 @@ mark {
     background-color: black;
   }
   50% {
-    background-color: orangeblack; /* You can change this to any color */
+    background-color: orangeblack;
   }
   100% {
     background-color: yellow;
   }
+}*/
+@keyframes highlight {
+    from {
+      background-position: 0;
+    }
+
+    to {
+      background-position: -100%;
+    }
+}
+
+mark {
+    animation-name: highlight;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    background-size: 200%;
+    background-image: linear-gradient(to right, black 50%, transparent 50%), 
+                      linear-gradient(transparent 50%, yellow 50%);
 }
 .container {
   padding: 10px 10%;
