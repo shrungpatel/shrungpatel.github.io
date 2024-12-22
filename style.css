@@ -1,150 +1,177 @@
+/* colors: https://www.w3schools.com/colors/colors_names.asp */
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
-    background: #080808;
-    color: #fff;
+  background: #080808;
+  color: #fff;
 }
 
 #header {
-    width: 100%;
-    height: 100vh;
-    /*background-color: black;*/
-    background-image: url("WebsiteBackground.png");
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 100vh;
+  /*background-color: black;*/
+  background-image: url("WebsiteBackground.png");
+  background-size: cover;
+  background-position: center;
 }
 /* https://www.w3resource.com/html-css-exercise/html-css-practical-exercises/html-css-practical-exercise-28.php */
-#background { /* Comment: Styles the element for the polka dot background pattern */
-    width: 100%;
-    height: 100vh;
-    background-color: black; /* Comment: Sets the background color of the element */
-    background-image:  /* Comment: Defines a radial gradient for black dots */
-      radial-gradient(darkblue 1%, transparent 11%); /* Comment: Defines a radial gradient for red dots */
-    background-size: 60px 60px; /* Comment: Sets the size of the background dots */
-    background-position: 0 0, 30px 30px; /* Comment: Sets the position of the background dots */
-    background-repeat: repeat; /* Comment: Specifies that the background pattern should repeat */
+#background {
+  /* Comment: Styles the element for the polka dot background pattern */
+  width: 100%;
+  height: 100vh;
+  background-color: black; /* Comment: Sets the background color of the element */
+  background-image:  /* Comment: Defines a radial gradient for black dots */ radial-gradient(
+    darkblue 1%,
+    transparent 11%
+  ); /* Comment: Defines a radial gradient for red dots */
+  background-size: 60px 60px; /* Comment: Sets the size of the background dots */
+  background-position: 0 0, 30px 30px; /* Comment: Sets the position of the background dots */
+  background-repeat: repeat; /* Comment: Specifies that the background pattern should repeat */
 }
 #background:hover {
-    background-image: radial-gradient(blue 1%, transparent 11%); /* Comment: Defines a radial gradient for red dots */
+  background-image: radial-gradient(
+    gold 1%,
+    transparent 10%
+  ); /* Comment: Defines a radial gradient for red dots */
 }
-
+mark {
+  background-color: yellow;
+  color: black;
+  animation: highlight-animation 2s ease-in-out;
+}
+@keyframes highlight-animation {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: orangeblack; /* You can change this to any color */
+  }
+  100% {
+    background-color: yellow;
+  }
+}
 .container {
-    padding: 10px 10%;
+  padding: 10px 10%;
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: safe center;
-    flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
-    position: relative;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
 }
 
 nav ul li a::after {
-    content: '';
-    width: 0;
-    height: 3px;
-    background: red;
-    position: absolute;
-    left: 0px;
-    bottom: -6px;
-    transition: 0.5s;
-    /*text-shadow: 5px; */
+  content: "";
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  transition: 0.5s;
+  /*text-shadow: 5px; */
 }
 
 nav ul li a:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 .header-text {
-    margin-top: 20%;
-    font-size: 30px;
-    display: inline-block;
+  margin-top: 20%;
+  font-size: 30px;
+  display: inline-block;
 }
 
 .header-text h1 {
-    font-size: 60px;
-    margin-top: 20px;
+  font-size: 60px;
+  margin-top: 20px;
 }
 
 .header-text h1 span {
-    color: yellow;
+  color: yellow;
 }
 
 .header-text h1 span:hover {
-    /*text-shadow: 0 10px 10px #4d4646;*/
-    color: orange;
+  /*text-shadow: 0 10px 10px #4d4646;*/
+  color: orange;
+}
+
+p a {
+  color: cornflowerblue; //chocolate;
+}
+p a:hover {
+  color: deepskyblue; //orange;
 }
 
 .waving:before {
-    content: attr(data-hover);
-}
-    
-.waving {
-    display: inline-block;
-    animation-name: wave-animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    transform-origin: bottom;
-    margin-left: 10px;
-}
-@keyframes wave-animation {
-    0% {
-        transform: rotate(0);
-    }
-    25% {
-        transform: rotate(-0.025turn);
-    }
-    50% {
-        transform: rotate(0);
-    }
-    75% {
-        transform: rotate(0.025turn);
-    }
-    100% {
-        transform: rotate(0);
-    }
+  content: attr(data-hover);
 }
 
+.waving {
+  display: inline-block;
+  animation-name: wave-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  margin-left: 10px;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-0.025turn);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  75% {
+    transform: rotate(0.025turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 
 /* about */
 
 #about {
-    padding: 80px 0;
-    color: #ababab;
+  padding: 80px 0;
+  color: #ababab;
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .about-col-left {
-    flex-basis: 35%;
+  flex-basis: 35%;
 }
 .about-col-left img {
-    width: 100%;
-    border-radius: 15px;
+  width: 100%;
+  border-radius: 15px;
 }
 .about-col-right {
-    flex-basis: 60%;
-    
+  flex-basis: 60%;
 }
