@@ -117,12 +117,6 @@ nav ul li a:hover::after {
   display: inline-block;
 }
 
-.section-text {
-  padding: 5%;
-  font-size: 30px;
-  display: inline-block;
-}
-
 .header-text h1 {
   font-size: 60px;
   margin-top: 20px;
@@ -135,6 +129,16 @@ nav ul li a:hover::after {
 .header-text h1 span:hover {
   /*text-shadow: 0 10px 10px #4d4646;*/
   color: orange;
+}
+
+.section-text {
+  padding: 5%;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.section-text h1 {
+  text-align: center;
 }
 
 p a {
