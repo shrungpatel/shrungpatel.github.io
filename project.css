@@ -1,0 +1,109 @@
+/* colors: https://www.w3schools.com/colors/colors_names.asp */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+}
+#background:hover {
+  background: linear-gradient(45deg, red, yellow, orange, red);
+}
+
+.container {
+  padding: 1% 10% 1%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: safe center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 0px;
+  bottom: -6px;
+  transition: 0.5s;
+  /*text-shadow: 5px; */
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.header-text {
+  /* margin-top: 20%; */
+  font-size: 30px;
+  display: inline-block;
+}
+
+.section-text {
+  padding: 5%;
+  font-size: 30px;
+  display: inline-block;
+}
+
+.section-text h1 {
+  text-align: center;
+}
+
+p a {
+  color: cornflowerblue; /*chocolate*/
+}
+p a:hover {
+  color: deepskyblue; /*orange*/
+}
+
+/* about */
+
+#about {
+  color: black;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 1);
+  padding: 10%;
+}
