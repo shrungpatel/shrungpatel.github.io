@@ -14,15 +14,16 @@ body {
 #header {
   width: 100%;
   background-color: black;
-  background-size: cover;
-  background-position: center;
 }
+
 #background:hover {
   background: linear-gradient(45deg, red, yellow, orange, red);
+  color: black;
 }
 
 .container {
   padding: 1% 10% 1%;
+  text-align: center;
 }
 
 nav {
@@ -41,7 +42,7 @@ nav ul li {
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20.5px;
   font-weight: bold;
   position: relative;
 }
@@ -83,12 +84,6 @@ p a {
 }
 p a:hover {
   color: deepskyblue; /*orange*/
-}
-
-/* about */
-
-#about {
-  color: black;
 }
 
 .row {
