@@ -19,6 +19,8 @@ body {
 #background:hover {
   background: linear-gradient(45deg, red, yellow, orange, red);
   color: black;
+  min-height: 100vh;
+
 }
 
 .container {
@@ -101,4 +103,8 @@ p a:hover {
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 1);
   padding: 10%;
+}
+
+.gallery {
+  display: flex;
 }
