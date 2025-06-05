@@ -105,6 +105,10 @@ p a:hover {
   padding: 10%;
 }
 
+.glass:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
 .gallery {
   display: flex;
 }
