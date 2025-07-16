@@ -209,3 +209,7 @@ p a:hover {
   border: 1px solid rgba(255, 255, 255, 1);
   padding: 10%;
 }
+
+.glass:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
