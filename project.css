@@ -81,6 +81,10 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
+.section-text h6 {
+  text-align: center;
+}
+
 p a {
   color: cornflowerblue; /*chocolate*/
 }
