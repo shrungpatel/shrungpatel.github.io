@@ -15,7 +15,7 @@ body {
   width: 100%;
   height: 100vh;
   /*background-color: black;*/
-  background-image: url("WebsiteBackground.png");
+  background-image: url("../images/WebsiteBackground.png");
   background-size: cover;
   background-position: center;
 }
@@ -212,4 +212,7 @@ p a:hover {
 
 .glass:hover {
   background: rgba(255, 255, 255, 0.7);
+}
+.logo:hover {
+  transform: scale(1.2);
 }
