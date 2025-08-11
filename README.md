@@ -1,2 +1,2 @@
 # PersonalWebsite
-This is my personal website. See shrungpatel.github.io/
+This is my personal website: [shrungpatel.github.io/](shrungpatel.github.io/)
